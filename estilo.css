@@ -98,3 +98,18 @@ form button {
 form button:hover {
   background: #444;
 }
+.imagenes {
+  max-width: 40%; /* la imagen ocupará como máximo el 40% del contenedor */
+  height: auto; /* mantiene la proporción original */
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsivo: en pantallas pequeñas la imagen se reduce */
+@media (max-width: 600px) {
+  .imagenes {
+    max-width: 70%; /* más grande proporcionalmente en móviles */
+  }
+}
